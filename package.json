@@ -1,0 +1,47 @@
+{
+  "name": "rg-cli",
+  "version": "0.0.1",
+  "description": "Rodrigo Godoy CLI",
+  "private": true,
+  "bin": {
+    "rg": "bin/rg-cli"
+  },
+  "scripts": {
+    "format": "prettier --write **/*.{js,json} && standard --fix",
+    "lint": "standard",
+    "test": "jest",
+    "watch": "jest --watch",
+    "snapupdate": "jest --updateSnapshot",
+    "coverage": "jest --coverage"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "readme.md",
+    "docs",
+    "bin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gitmoji-cli": "^3.2.1",
+    "global": "^4.4.0",
+    "gluegun": "latest"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "prettier": "^1.12.1",
+    "standard": "^12.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
